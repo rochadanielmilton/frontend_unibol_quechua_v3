@@ -256,7 +256,7 @@ export default {
         styles: { fontSize: 6, halign: 'center' },
         bodyStyles: { lineWidth: 0.2, lineColor: [0, 0, 0] },
         margin: { left: 50, top: 105 },
-        padding: 3
+        padding: 2
       })
 
       finalY = doc.lastAutoTable.finalY

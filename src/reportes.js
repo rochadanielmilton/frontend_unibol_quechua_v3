@@ -816,7 +816,7 @@ export async function historialAcademico(datos_estudiante, grado, fecha_emision,
   doc.setTextColor(10);
   doc.setFontSize(14).setFont(undefined, 'bold');
   doc.text(`
-      CERTIFICADO DE CALIFICACIONES GESTIÓN: ${gestion}
+      CERTIFICADO DE CALIFICACIONES
       `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
   finalY += 30;
