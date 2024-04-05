@@ -328,7 +328,7 @@ export default {
       ci_estudiante: 0, extencion: '', nombres: '', apellidoP: '', apellidoM: '', direccion: '', celular: 0, anio_ingreso: '', anio_cursado: '', genero: '', fecha_nacimiento: '', depa_nacimiento: '', prov_nacimiento: '', munic_nacimiento: '', tipo_ingreso: '',
       fotografia: '', estado_civil: '', idioma_nativo: '', idioma_regular: '', email: '', nacionalidad: '', numero_archivo: '',
       homologacion: '', estado_homologacion: '', convalidacion: '', estado_convalidacion: '', egresado: '', estado_egresado: '', titulado: '', descripcion_titulado: '',
-      numero_registro: 0, obs1: '', obs2: '', obs3: '', estado: '', descripcion_estado: '', baja: '', codigo_carrera: 0, nombre_carrera: '', inscrito_gestion: '',
+      numero_registro: 0, obs1: '', obs2: '', obs3: '', estado: '', descripcion_estado: '', baja: '',interno:'',observacion_interno:'', codigo_carrera: 0, nombre_carrera: '', inscrito_gestion: '',
       ci_especial: '', photography: '', fileFoto: null,
       organizacion: {},
       organizacion_matriz: '', organizacion_departamental: '', organizacion_regional: '', comunidad_sindicato: '', otros: '',
@@ -484,12 +484,14 @@ export default {
           this.estudiante_formateado.push([`<span class='fw-bold'>IDIOMA NATIVO:</span> &emsp; &emsp;&emsp;&emsp;&emsp;&emsp; ${this.idioma_nativo}`, `<span class='fw-bold'>OBSERVACIÓN3:</span>  &emsp;&emsp;&emsp;&emsp;&emsp; ${this.obs3}`]),
 
           this.baja = response.data['baja'],
+          this.interno=response.data['interno'] ? response.data['interno'] :'',
+          this.observacion_interno=response.data['observacion_interno'] ? response.data['observacion_interno']:'',
 
           this.estudiante_formateado.push([`<span class='fw-bold'>IDIOMA REGULAR:</span>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ${this.idioma_regular}`, `<span class='fw-bold'>BAJA:</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  ${this.baja}`]),
 
-          this.estudiante_formateado.push([`<span class='fw-bold'>EMAIL:</span>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ${this.email}`, ``]),
+          this.estudiante_formateado.push([`<span class='fw-bold'>EMAIL:</span>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ${this.email}`, `<span class='fw-bold'>ES INTERNO:</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  ${this.interno}`]),
 
-          this.estudiante_formateado.push([`<span class='fw-bold'>NACIONALIDAD: </span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ${this.nacionalidad}`, ``]),
+          this.estudiante_formateado.push([`<span class='fw-bold'>NACIONALIDAD: </span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ${this.nacionalidad}`, `<span class='fw-bold'>OBSERVACIÓN INTERNO:</span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  ${this.observacion_interno}`]),
 
           this.estudiante_data = response.data
         )
