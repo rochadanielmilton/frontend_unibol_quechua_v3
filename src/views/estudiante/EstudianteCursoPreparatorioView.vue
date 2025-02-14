@@ -15,7 +15,7 @@
       <div class="mb-3">
         <div class="mb-3 d-grid gap-2 d-md-block ">
           <button class="btn btn-success rounded   me-1" @click="confirmarRegistro()">
-            INSCRIBIR
+            REGISTRAR COMO ESTUDIANTE REGULAR
           </button>
         </div>
       </div>
@@ -71,6 +71,9 @@
               </th>
               <th>
                 CARRERA
+              </th>
+              <th>
+                AÑO DE POSTULACIÓN
               </th>
               <th>
                 INSCRITO
@@ -141,6 +144,7 @@ export default {
         { data: 'apellido_materno_p' },
         { data: 'estado_ingreso' },
         { data: 'carrera' },
+        { data: 'anio_postulacion' },
         { data: 'registrado' }
       ]
 

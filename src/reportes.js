@@ -64,7 +64,7 @@ export async function generarReporteInscripcionEgresados(modalidad_egreso, datos
   doc.setTextColor(10);
   doc.setFontSize(10).setFont(undefined, 'bold');
   doc.text(`
-                        BOLETA DE INSCRIPCIÓN 2024
+                        BOLETA DE INSCRIPCIÓN 2025
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
   finalY += 10;
@@ -224,7 +224,7 @@ export async function generarReporteInscripcionNuevos(asignaturas_tabla, modalid
   doc.setTextColor(10);
   doc.setFontSize(10).setFont(undefined, 'bold');
   doc.text(`
-                        BOLETA DE INSCRIPCIÓN 2024
+                        BOLETA DE INSCRIPCIÓN 2025
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
   finalY += 10;
@@ -285,7 +285,7 @@ export async function generarReporteInscripcionNuevos(asignaturas_tabla, modalid
   doc.setTextColor(10);
   doc.setFontSize(10).setFont(undefined, 'bold');
   doc.text(`
-                        PROGRAMACIÓN DE ASIGNATURAS GESTIÓN 2024
+                        PROGRAMACIÓN DE ASIGNATURAS GESTIÓN 2025
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
   finalY += 10;
@@ -412,7 +412,7 @@ export async function generarReporteInscripcionRegulares(asignaturas_tabla, asig
   doc.setTextColor(10);
   doc.setFontSize(10).setFont(undefined, 'bold');
   doc.text(`
-                        BOLETA DE INSCRIPCIÓN 2024
+                        BOLETA DE INSCRIPCIÓN 2025
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
   finalY += 10;
@@ -457,7 +457,7 @@ export async function generarReporteInscripcionRegulares(asignaturas_tabla, asig
   doc.setTextColor(10);
   doc.setFontSize(10).setFont(undefined, 'bold');
   doc.text(`
-                        ASIGNATURAS GESTIÓN 2023
+                        ASIGNATURAS GESTIÓN 2024
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
   autoTable(doc, {
@@ -479,7 +479,7 @@ export async function generarReporteInscripcionRegulares(asignaturas_tabla, asig
   doc.setTextColor(10);
   doc.setFontSize(10).setFont(undefined, 'bold');
   doc.text(`
-                        PROGRAMACIÓN DE ASIGNATURAS GESTIÓN 2024
+                        PROGRAMACIÓN DE ASIGNATURAS GESTIÓN 2025
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
   autoTable(doc, {

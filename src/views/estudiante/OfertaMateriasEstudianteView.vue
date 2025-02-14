@@ -312,7 +312,7 @@ export default {
       doc.setTextColor(10);
       doc.setFontSize(10).setFont(undefined, 'bold');
       doc.text(`
-                        BOLETA DE INSCRIPCIÓN 2024
+                        BOLETA DE INSCRIPCIÓN 2025
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
       finalY += 10;
@@ -352,7 +352,7 @@ export default {
       doc.setTextColor(10);
       doc.setFontSize(10).setFont(undefined, 'bold');
       doc.text(`
-                        ASIGNATURAS GESTIÓN 2023
+                        ASIGNATURAS GESTIÓN 2024
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
       autoTable(doc, {
@@ -373,7 +373,7 @@ export default {
       doc.setTextColor(10);
       doc.setFontSize(10).setFont(undefined, 'bold');
       doc.text(`
-                        PROGRAMACIÓN DE ASIGNATURAS GESTIÓN 2024
+                        PROGRAMACIÓN DE ASIGNATURAS GESTIÓN 2025
                         `, (doc.internal.pageSize.getWidth() / 2) - 20, finalY, null, null, "center");
 
       autoTable(doc, {

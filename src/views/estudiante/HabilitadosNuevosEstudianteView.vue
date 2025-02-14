@@ -554,8 +554,13 @@ export default {
             this.anio_actual = response.data['anio_actual']
           )
         ).catch(error => {
-          console.log(error)
-          show_alerta(error, 'error')
+          if (error.response) {
+            const status = error.response.data.message;
+            show_alerta(status, 'error')
+          }
+          else {
+            show_alerta(error, 'error')
+          }
         });
     }
   }
